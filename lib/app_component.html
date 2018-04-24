@@ -1,2 +1,10 @@
 <h1>Random Hanzi</h1>
-<div class='hanzi'>{{hanzi}}</div>
+
+<div>
+  <label>Count</label>
+  <input [(ngModel)]='countStr' type='number'>
+</div>
+
+<div>
+  <span *ngFor='let char of characters' class='hanzi'>{{char}}</span>
+</div>
