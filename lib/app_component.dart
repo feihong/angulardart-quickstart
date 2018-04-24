@@ -12,11 +12,10 @@ String getRandomHanzi() {
 
 @Component(
   selector: 'cool-app',
-  template: """
-    <h1>Random Hanzi</h1>
-    <div class='hanzi'>{{hanzi}}</div>
-  """,
+  templateUrl: 'app_component.html',
+  styleUrls: ['app_component.css'],
 )
 class AppComponent {
-  var hanzi = getRandomHanzi();
+  int count = 3;
+  String hanzi = getRandomHanzi();
 }
