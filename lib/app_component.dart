@@ -24,11 +24,10 @@ List<String> getRandomCharacters(int count) {
   directives: [coreDirectives, formDirectives],
 )
 class AppComponent {
-  String countStr = initialValue.toString();
   int count = initialValue;
   List<String> characters = getRandomCharacters(initialValue);
 
   onGenerate() {
-    characters = getRandomCharacters(initialValue);
+    characters = getRandomCharacters(count);
   }
 }
